@@ -13,6 +13,9 @@
 --color-bg-alert: #fdeaec;
 --color-theme-primary: #623ce6;
 }
+div#game-result {
+    display: block !important;
+}
 
 .game-result-content .match {
 background-color: var(--color-bg-primary);
