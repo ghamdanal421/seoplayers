@@ -195,10 +195,10 @@ align-items: center;
 justify-content: center;
 }
 
-    .itempmatch .game-info.blog-post.hentry.item-post {
+    .tabs-match .game-info.blog-post.hentry.item-post {
     padding: 0;
 }
-.itempmatch .postTimestamp {
+.tabs-match .post-header-line {
     margin: 0;
 }
 .game-result-content {
@@ -452,7 +452,7 @@ width: 0%;
 height: 100%;
 line-height: 6px;
 color: #fff;
-background-color: #38a9ff;
+background-color: var(--right-color-line);
 box-shadow: none;
 border-radius: 3px;
 }
@@ -464,7 +464,7 @@ border-radius: 0 3px 3px 0;
 border-radius: 3px 0 0 3px;
 }
 .progress__double .progress:last-child .progress__bar {
-background-color: #9fe900;
+background-color: var(--left-color-line);
 
 border-radius: 3px 0 0 3px;
 }
