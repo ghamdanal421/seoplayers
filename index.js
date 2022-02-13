@@ -1,10 +1,5 @@
   //<div id="index"></div>
- var headID =document.querySelector('head');
-    var link = document.createElement("link");
-    link.type = "text/css";
-    link.rel = "stylesheet";
-    link.href =  "https://cdn.statically.io/gh/ghamdanal421/4bth/main/index-style.css?v=1.0";
-      headID.appendChild(link);
+ 
 
     var emIndex = document.getElementById('index');
     emIndex.innerHTML = `<div id="result-text"></div>
@@ -51,7 +46,7 @@
               homeURL: window.location.origin,
               maxResults: 16,
               numChars: 270,
-              thumbWidth: 350,
+              thumbWidth: 300,
               thumbHeight: 95,
               navText: "عرض المزيد",
               resetText: "<span style='color: #e91e63; text-decoration: underline; '>إعادة ضبط</span>",
@@ -174,14 +169,8 @@
                       "media$thumbnail" in a[i]
                         ? a[i].media$thumbnail.url
                             .replace(/.*?:\/\//g, "//")
-                            .replace(
-                              /\/s[0-9]+\-c/,
-                              "\/s" + config.thumbWidth + ""
-                            )
-                        : config.noImage.replace(
-                            /\/s[0-9]+\-c/,
-                            "\/s" + config.thumbWidth + ""
-                          );
+                            .replace(/s[0-9]+\-c/,"s" +  config.thumbWidth  + "-c")
+                        : config.noImage.replace(/s[0-9]+\-c/,"s" +  config.thumbWidth  + "-c");
                     for (var j = 0, jen = a[i].link.length; j < jen; j++) {
                       c =
                         a[i].link[j].rel == "alternate"
