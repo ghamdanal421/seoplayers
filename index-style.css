@@ -1,0 +1,98 @@
+.layout-advanced-search {
+    color: var(--color-text-primary);
+    margin: 30px 0;
+    box-shadow: 0 6px 18px 0 rgb(9 32 76 / 4%);
+    background: #fff;
+    border-radius: 3px;
+}
+.layout-advanced-search > header {
+    border-bottom: 2px solid rgba(48, 48, 48, 0.1);
+    padding: 10px 16px;
+}
+.layout-advanced-search > header h2 {
+    font-size: 1em;
+}
+.container-input {
+    padding: 40px 20px;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.container-input > * {
+    float: right;
+}
+form#post-search {
+    position: relative;
+    margin: 0 20px;
+    width: 50%;
+}
+input#feed-q {
+    border: 1px solid var(--background-color);
+    outline: none;
+    padding: 12px 20px;
+    padding-left: 50px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px 0 rgb(30 30 30 / 7%);
+    font-size: 16px;
+    color: var(--color-text-primary);
+    width: 100%;
+}
+form#post-search button {
+    position: absolute;
+    left: 0;
+    outline: none;
+    border: 1px solid var(--background-color);
+    padding: 12px 30px;
+    border-radius: 30px 0 0 30px;
+    font-weight: 700;
+    color: var(--background-primary);
+    height: 100%;
+    top: 0;
+    border-right-color: #fff;
+    background-image: linear-gradient( 135deg, var(--main-color), var(--help-color) );
+}
+select#feed-order, select#label-sorter {
+    color: var(--color-text-primary);
+    border-radius: 500px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 8%);
+    background-color: #fff;
+    border: 1px solid var(--background-color);
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 20px;
+    outline: none;
+}
+select[disabled] {
+    opacity: .4 !important;
+}
+@media screen and (max-width: 1090px) {
+    .container-input{
+        max-width: 100%;
+
+    }
+}
+@media screen and (max-width: 872px) {
+    form#post-search {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.container-input > div {
+    width: 50%;
+}
+select#feed-order, select#label-sorter {
+    margin: 0;
+}
+}
+@media screen and (max-width: 389px) {
+    select#feed-order, select#label-sorter {
+    padding: 10px;
+}
+.container-input > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+}
