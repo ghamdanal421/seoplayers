@@ -1,3 +1,6 @@
+#advanced-search {
+    display: block !important;
+}
 .layout-advanced-search {
     color: var(--color-text-primary);
     margin: 30px 0;
@@ -62,6 +65,9 @@ select#feed-order, select#label-sorter {
     font-weight: bold;
     margin: 0 20px;
     outline: none;
+}
+select#label-sorter {
+    width: 150px;
 }
 select[disabled] {
     opacity: .4 !important;
